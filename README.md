@@ -2,11 +2,11 @@
 *Maciej Bak*
 *Swiss Institute of Bioinformatics*
 
-This is a very small repository that presents the libraries needed for efficient statistical computing in R interfacing to C++. Functions presented are useful to build statistical models based on likelihood and optimize their parameters.
-A gentle introduction to Rcpp may be found at:
-[http://adv-r.had.co.nz/Rcpp.html][link1] 
-A more comprehensive guide is available at:
-[https://teuder.github.io/rcpp4everyone_en][link2] 
+This is a very small repository that presents the libraries needed for efficient statistical computing in R interfacing to C++. Functions presented are useful to build statistical models based on likelihood and optimize their parameters.  
+A gentle introduction to Rcpp may be found at:  
+[http://adv-r.had.co.nz/Rcpp.html][link1]  
+A more comprehensive guide is available at:  
+[https://teuder.github.io/rcpp4everyone_en][link2]  
 
 ## Dependencies
 The software has been tested with R version 3.5.1. Required packages:
