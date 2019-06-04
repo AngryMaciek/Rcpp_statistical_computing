@@ -1,20 +1,43 @@
-# Maciej Bak
-# Swiss Institute of Bioinformatics
+# Rcpp interface for statistical computing
+*Maciej Bak*
+*Swiss Institute of Bioinformatics*
 
-This is a very small repository that presents the libraries needed for efficient statistical computing in R interfacing to C++.
+This is a very small repository that presents the libraries needed for efficient statistical computing in R interfacing to C++. Functions presented are useful to build statistical models based on likelihood and optimize their parameters.
+A gentle introduction to Rcpp may be found at:
+[http://adv-r.had.co.nz/Rcpp.html][link1] 
+A more comprehensive guide is available at:
+[https://teuder.github.io/rcpp4everyone_en][link2] 
 
-This software is tested on R version 3.5.1
+## Dependencies
+The software has been tested with R version 3.5.1. Required packages:
+* Rcpp (>1.0.0)
+* numDeriv (>2016.8-1)
+* tictoc (>1.0)
 
-Required R libraries:
-* tictoc
-* Rcpp
-* numDeriv
+Requirements might be installed directly from within the R interpreter:
+```
+$ R
+> install.packages(c("Rcpp", "numDeriv", "tictoc"))
+> q()
+```
 
-This repository contains six files:
-* README.md (this file)
-* tests.R - the executable R script with example calls of C++ functions
-* tests.cpp - C++ functions that call optimization-related algorithms
-* zeroin.c - C routine underlying R code for root finding of a single-argument function
-* modified_optim.c - modified version of the C file underlying R code with a method to minimize a given multivariate function
+## Repository
+This repository contains five files:
 
-These libraries and functions should be enough to implement complex Bayesian models, fit the parameters efficiently and optimize the runtime on big datasets. Functions' logic and interfaces are described within the files above.
+| File | Description |
+| ------ | ------ |
+| README.md | (this file) |
+| tests.R | R script with example calls of C++ functions |
+| tests.cpp | C++ functions with optimisation-related algorithms |
+| zeroin.c | C routine for root finding of an univariate function |
+| modified_optim.c | modified version of the C file with a method to minimize a given multivariate function |
+
+These libraries and functions should be enough to implement complex Bayesian models, fit the parameters efficiently and optimize the runtime on big datasets. Functions' logic and sygnatures are described within the files above.
+
+## License
+GNU General Public License 
+
+
+[link1]: <http://adv-r.had.co.nz/Rcpp.html>
+[link2]: <https://teuder.github.io/rcpp4everyone_en>
+
