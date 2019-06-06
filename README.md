@@ -22,7 +22,7 @@ $ R
 ```
 
 ## Repository
-This repository contains five files:
+This repository contains six files:
 
 | File | Description |
 | ------ | ------ |
@@ -31,6 +31,7 @@ This repository contains five files:
 | tests.cpp | C++ functions with optimisation-related algorithms |
 | zeroin.c | C routine for root finding of an univariate function |
 | modified_optim.c | modified version of the C file with a method to minimize a given multivariate function |
+| LICENSE | The GNU General Public License v3.0 |
 
 These libraries and functions should be enough to implement complex Bayesian models, fit the parameters efficiently and optimize the runtime on big datasets. Functions' logic and sygnatures are described within the files above.
 
